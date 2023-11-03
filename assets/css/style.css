@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Lora', sans-serif;
+}
+
+body {
+  background-image: url(../css/bg_img/bg.jpeg);
+}
+
+/* Header */
+.header-conteiner {
+  background-color: white;
+  min-width: 1280px;
+}
+
+.conteiner {
+  max-width: 1280px;
+  margin: auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo > a {
+  font-size: 38px;
+  font-weight: 700;
+  text-decoration: none;
+  color: black;
+}
+
+.logo > a:active {
+  color: blue;
+}
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.nav-list {
+  display: flex;
+  padding: 0 20px;
+  list-style-type: none;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-link:hover {
+  color: green;
+}
+
+.nav-link:active {
+  color: blue;
+}
+
+.nav-link-action {
+  color: orange;
+  text-decoration: none;
+}
+
+.nav-link-action:active {
+  color: blue;
+}
+
+/* Main */
+
+/* Articles */
+.main-conteiner {
+  max-width: 1280px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  background-color: #70d9ea;
+  height: 86vh;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+
+.contetnt {
+  max-width: 980px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.cpu, .ram, .videocard {
+  margin-top: 20px;
+}
+
+.ram-title, .cpu-title, .videocard-title {
+  margin-bottom: 20px;
+  border-bottom: 2px solid lightcoral;
+}
+
+.content-link {
+  text-decoration: none;
+  color: black;
+}
+
+.comments-link {
+  text-decoration: none;
+  color: yellow;
+}
+.article-link {
+  text-decoration: none;
+  color: orange;
+}
+
+.short-articles {
+  background-color: red;
+}
+
+/* Footer */
+.footer {
+  color: rgb(255, 255, 255);
+  margin: 0 auto;
+  background-color: black;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  text-align: center;
+}
+
+.footer-text {
+  display: flex;
+  justify-content: center;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 5px;
+}

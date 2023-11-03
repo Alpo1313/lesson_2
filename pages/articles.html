@@ -5,61 +5,78 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Статті</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 
 <body>
-  <header>
-    <h1>Статті</h1>
-
-    <nav>
-      <a href="../index.html">Головна</a>
-      <a href="articles.html">Статті</a>
-      <a href="catalog.html">Каталог</a>
-      <a href="contacts.html">Контакти</a>
-      <a href="gallery.html">Галерея</a>
-      <a href="registration.html">Реєстрація</a>
-      <a href="page-nav.html">Навігація</a>
-    </nav>
+  <header class="header-conteiner">
+    <div class="conteiner">
+      <div class="logo">
+        <a href="../index.html">CompMax</a>
+      </div>
+      <nav class="navigation">
+        <ul class="nav-bar">
+          <li class="nav-list"><a class="nav-link" href="../index.html">Головна</a></li>
+          <li class="nav-list"><a class="nav-link-action" href="articles.html">Статті</a></li>
+          <li class="nav-list"><a class="nav-link" href="catalog.html">Каталог</a></li>
+          <li class="nav-list"><a class="nav-link" href="contacts.html">Контакти</a></li>
+          <li class="nav-list"><a class="nav-link" href="gallery.html">Галерея</a></li>
+          <li class="nav-list"><a class="nav-link" href="page-nav.html">Навігація</a></li>
+          <li class="nav-list"><a class="nav-link" href="registration.html">Реєстрація</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
   <!-- Статті -->
-  <main>
-    <div>
-      <h2>Процессор</h2>
+  <main class="main-conteiner">
+    <h1>Статті</h1>
+    <div class="contetnt">
+      <div class="cpu">
+        <h2 class="cpu-title"><a class="content-link" href="articles/cpu.html">Процессор</a></h2>
 
-      <p>В статье расскажем о том, что такое ЦП (центральный процессор), рассмотрим функции процессора и разберем как он
-        работает...>>><a href="articles/cpu.html">Читати далі</a>
-      </p>
+        <p class="short-articles">В статье расскажем о том, что такое ЦП (центральный процессор), рассмотрим функции
+          процессора и разберем как
+          он
+          работает...>>><a class="article-link" href="articles/cpu.html">Читати далі</a>
+        </p>
 
-      <p><a href="articles/cpu.html#comments">Прейти до коментарів</a></p>
-    </div>
+        <p class="comments"><a class="comments-link" href="articles/cpu.html#comments">Прейти до коментарів</a></p>
+      </div>
 
-    <div>
-      <div></div>
-      <h2>Оперативная память</h2>
+      <div class="ram">
+        <h2 class="ram-title"><a class="content-link" href="articles/ram.html#comments">Оперативная память</a></h2>
 
-      <p>Оперативная память (ОЗУ) — это такая форма компьютерной памяти, которая может считываться и изменяться в любом
-        порядке, обычно используется для хранения рабочих данных и машинного кода. Аббревиатура ОЗУ расшифровывается как
-        оперативное запоминающее устройство. По внешнему виду оперативная память компьютера напоминает набор микросхем
-        для хранения данных. При отключении питания все данные, хранящиеся в памяти, будут стерты. ОЗУ обеспечивает
-        именно оперативную доставку данных от приложения к памяти и наоборот...>>><a href="articles/ram.html">Читати
-          далі</a></p>
+        <p class="short-articles">Оперативная память (ОЗУ) — это такая форма компьютерной памяти, которая может
+          считываться и
+          изменяться в
+          любом
+          порядке, обычно используется для хранения рабочих данных и машинного кода. Аббревиатура ОЗУ расшифровывается
+          как
+          оперативное запоминающее устройство. По внешнему виду оперативная память компьютера напоминает набор микросхем
+          для хранения данных. При отключении питания все данные, хранящиеся в памяти, будут стерты. ОЗУ обеспечивает
+          именно оперативную доставку данных от приложения к памяти и наоборот...>>><a class="article-link"
+            href="articles/ram.html">Читати
+            далі</a></p>
 
-      <p><a href="articles/ram.html#comments">Прейти до коментарів</a></p>
-    </div>
+        <p class="comments"><a class="comments-link" href="articles/ram.html#comments">Прейти до коментарів</a></p>
+      </div>
 
-    <div>
-      <h2>Видеокарта</h2>
+      <div class="videocard">
+        <h2 class="videocard-title"><a class="content-link" href="articles/videocard.html">Видеокарта</a></h2>
 
-      <p> Видеокарта, также называемая видеоадаптером — это устройство, которое управляет выводом графики в
-        компьютере...>>><a href="articles/videocard.html">Читати далі</a></p>
+        <p class="short-articles"> Видеокарта, также называемая видеоадаптером — это устройство, которое управляет
+          выводом графики в
+          компьютере...>>><a class="article-link" href="articles/videocard.html">Читати далі</a></p>
 
-      <p><a href="articles/videocard.html#comments">Прейти до коментарів</a></p>
+        <p class="comments"><a class="comments-link" href="articles/videocard.html#comments">Прейти до коментарів</a>
+        </p>
+      </div>
     </div>
 
   </main>
 
-  <footer>
-    <p>&#169; Тут був я</p>
+  <footer class="footer">
+    <p class="footer-text">&#169; Тут був я</p>
   </footer>
 </body>
 
