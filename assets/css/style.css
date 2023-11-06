@@ -84,7 +84,7 @@ body {
   flex-direction: column;
   margin: 0 auto;
   background-color: #70d9ea;
-  height: 86vh;
+  height: 100%;
 }
 
 h1 {
@@ -94,7 +94,7 @@ h1 {
 }
 
 
-.contetnt {
+.content {
   max-width: 980px;
   display: flex;
   flex-direction: column;
@@ -127,6 +127,8 @@ h1 {
 .short-articles {
   background-color: red;
 }
+
+/* Cpu, Ram, Videocard */
 
 /* Footer */
 .footer {
