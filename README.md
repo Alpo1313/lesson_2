@@ -12,4 +12,4 @@
 - git reset filename
 - git log
 - git checkout
-- git branch
+- git branch.
