@@ -6,6 +6,7 @@
 
 html {
   font-family: 'Lora', sans-serif;
+  font-size: 17px;
 }
 
 body {
@@ -90,7 +91,7 @@ body {
 h1 {
   display: flex;
   justify-content: center;
-  margin-top: 20px;
+  margin: 20px 0;
 }
 
 
@@ -102,7 +103,7 @@ h1 {
 }
 
 .cpu, .ram, .videocard {
-  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .ram-title, .cpu-title, .videocard-title {
@@ -119,6 +120,7 @@ h1 {
   text-decoration: none;
   color: yellow;
 }
+
 .article-link {
   text-decoration: none;
   color: orange;
@@ -128,8 +130,43 @@ h1 {
   background-color: red;
 }
 
+.comments {
+  margin-top: 10px;
+}
+
 /* Cpu, Ram, Videocard */
 
+.title {
+  display: flex;
+  margin: 30px 20px 10px;
+}
+
+.different-first-letter::first-letter{
+  font-family: 'Courier New', Courier, monospaces;
+  font-size: 32px;
+  color: green;
+}
+
+.title-list {
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+}
+
+.life-comments {
+  display: flex;
+  flex-direction: column;
+}
+
+.name-commenters {
+  max-width: 200px;
+  margin: 15px 10px;
+  font-size: 18px;
+}
+
+.comment {
+  background-color: yellow;
+}
 /* Footer */
 .footer {
   color: rgb(255, 255, 255);
