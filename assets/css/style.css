@@ -31,14 +31,14 @@ body {
   align-items: center;
 }
 
-.logo > a {
+.logo>a {
   font-size: 38px;
   font-weight: 700;
   text-decoration: none;
   color: black;
 }
 
-.logo > a:active {
+.logo>a:active {
   color: blue;
 }
 
@@ -106,11 +106,15 @@ h1 {
   margin: 0 auto;
 }
 
-.cpu, .ram, .videocard {
+.cpu,
+.ram,
+.videocard {
   margin-bottom: 20px;
 }
 
-.ram-title, .cpu-title, .videocard-title {
+.ram-title,
+.cpu-title,
+.videocard-title {
   margin-bottom: 20px;
   border-bottom: 2px solid lightcoral;
 }
@@ -145,7 +149,7 @@ h1 {
   margin: 30px 20px 10px;
 }
 
-.different-first-letter::first-letter{
+.different-first-letter::first-letter {
   font-family: 'Courier New', Courier, monospaces;
   font-size: 32px;
   color: green;
@@ -175,16 +179,19 @@ h1 {
 /* Catalog */
 
 .list-catalog {
-  display: flex;
-  display: list-item;
   max-width: 980px;
   margin: 0 auto;
   list-style-type: none;
 }
 
-.list-catalog-name{ 
+.list-catalog-name {
   list-style-type: none;
+  margin-top: 5px;
+  margin-left: 20px;
 }
+
+/* Contacts */
+
 
 /* Footer */
 .footer {
