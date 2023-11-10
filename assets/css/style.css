@@ -16,7 +16,10 @@ body {
 /* Header */
 .header-conteiner {
   background-color: white;
+  width: 100%;
   min-width: 1280px;
+  position: fixed;
+  z-index: 1;
 }
 
 .conteiner {
@@ -86,6 +89,7 @@ body {
   margin: 0 auto;
   background-color: #70d9ea;
   height: 100%;
+  padding: 100px 0;
 }
 
 h1 {
@@ -167,6 +171,21 @@ h1 {
 .comment {
   background-color: yellow;
 }
+
+/* Catalog */
+
+.list-catalog {
+  display: flex;
+  display: list-item;
+  max-width: 980px;
+  margin: 0 auto;
+  list-style-type: none;
+}
+
+.list-catalog-name{ 
+  list-style-type: none;
+}
+
 /* Footer */
 .footer {
   color: rgb(255, 255, 255);
