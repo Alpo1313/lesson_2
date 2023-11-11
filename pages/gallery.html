@@ -6,9 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Галерея</title>
   <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600;700&family=Oswald:wght@400;500;600;700&family=Roboto:wght@400;500;700&family=Solitreo&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
+  <div class="bg-image"></div>
   <header class="header-conteiner">
     <div class="conteiner">
       <div class="logo">
@@ -28,31 +34,34 @@
     </div>
   </header>
 
-  <main class="main-conteiner">
+  <main class="main-gallery">
     <h1>Галерея</h1>
-    <div>
-      <figure>
-        <a href="../assets/img/cat_space.jpg" target="_blank"><img src="../assets/img/cat_space.jpg" alt="Кіт у космосі"
-            title="Кіт у космосі" width="400"></a>
-        <figcaption>Кот в очках</figcaption>
-      </figure>
+    <div class="gallery">
+      <div class="gallery-item">
+        <figure>
+          <a href="../assets/img/cat_space.jpg" target="_blank"><img src="../assets/img/cat_space.jpg"
+              alt="Кіт у космосі" title="Кіт у космосі"></a>
+          <figcaption>Кіт в очках</figcaption>
+        </figure>
+      </div>
+
+      <div class="gallery-item">
+        <figure>
+          <a href="../assets/img/cat_like.jpg" target="_blank"><img src="../assets/img/cat_like.jpg" alt="Кіт в тарілці"
+              title="Кіт в тарілці"></a>
+          <figcaption>Кіт в тарілці</figcaption>
+        </figure>
+      </div>
+
+      <div class="gallery-item">
+        <figure>
+          <a href="../assets/img/cat_hleb.jpg" target="_blank"><img src="../assets/img/cat_hleb.jpg" alt="Кот в очках"
+              title="Кіт з хлібом"></a>
+          <figcaption>Кіт з хлібом</figcaption>
+        </figure>
+      </div>
     </div>
 
-    <div>
-      <figure>
-        <a href="../assets/img/cat_like.jpg" target="_blank"><img src="../assets/img/cat_like.jpg" alt="Кіт в тарілці"
-            title="Кіт в тарілці" width="400"></a>
-        <figcaption>Кіт в тарілці</figcaption>
-      </figure>
-    </div>
-
-    <div>
-      <figure>
-        <a href="../assets/img/cat_hleb.jpg" target="_blank"><img src="../assets/img/cat_hleb.jpg" alt="Кот в очках"
-            title="Кіт з хлібом" width="400"></a>
-        <figcaption>Кіт з хлібом</figcaption>
-      </figure>
-    </div>
 
   </main>
 

@@ -6,10 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Реєстрація</title>
   <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600;700&family=Oswald:wght@400;500;600;700&family=Roboto:wght@400;500;700&family=Solitreo&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
-
+  <div class="bg-image"></div>
   <header class="header-conteiner">
     <div class="conteiner">
       <div class="logo">
@@ -30,106 +35,111 @@
   </header>
 
   <main class="main-conteiner">
-    <h1>Реєстрація</h1>
-    <form action="https://tests.fomenko.top/echo/index.php" method="GET">
-      <fieldset>
-        <legend>Форма реєстрації</legend>
-        <div>
-          <label for="lastname">Прізвище</label>
-          <input id="lastname" name="lastname" placeholder="Прізвище" type="text">
-        </div>
+    <div>
+      <h1>Реєстрація</h1>
+      <form action="https://tests.fomenko.top/echo/index.php" method="GET">
+        <fieldset class="form-wrap">
+          <legend class="form-wrap-title">Форма реєстрації</legend>
+          <div class="form-list">
+            <label for="lastname">Прізвище</label>
+            <input class="form-input form--input" id="lastname" name="lastname" placeholder="Прізвище" type="text">
+          </div>
 
-        <div>
-          <label for="name">Ім'я</label>
-          <input id="name" name="name" placeholder="Ім'я" type="text">
-        </div>
+          <div class="form-list">
+            <label for="name">Ім'я</label>
+            <input class="form-input form--input" id="name" name="name" placeholder="Ім'я" type="text">
+          </div>
 
-        <div>
-          <label for="surname">По батькові</label>
-          <input id="surname" name="surname" placeholder="По батькові" type="text">
-        </div>
+          <div class="form-list">
+            <label for="surname">По батькові</label>
+            <input class="form-input form--input" id="surname" name="surname" placeholder="По батькові" type="text">
+          </div>
 
-        <div>
-          <label for="file">Виберіть Фото</label>
-          <input id="file" name="file" type="file">
-        </div>
+          <div class="form-list">
+            <label for="email">Email</label>
+            <input class="form-input" id="email" name="email" placeholder="Email" type="email">
+          </div>
 
-        <div>
-          <label for="email">Email</label>
-          <input id="email" name="email" placeholder="Email" type="email">
-        </div>
+          <div class="form-list">
+            <label for="password">Пароль</label>
+            <input class="form-input" id="password" name="password" placeholder="Пароль" type="password">
+          </div>
 
-        <div>
-          <label for="password">Пароль</label>
-          <input id="password" name="password" placeholder="Пароль" type="password">
-        </div>
+          <div class="form-list">
+            <label for="site">Адресса сайту</label>
+            <input class="form-input" id="site" name="site" type="text" value="mysite.name">
+          </div>
 
-        <div>
-          <label for="site">Адресса сайту</label>
-          <input id="site" name="site" type="text" value="mysite.name">
-        </div>
+          <div class="form-list">
+            <label for="date">Дата рождения</label>
+            <input class="form-input" id="date" name="date" type="date">
+          </div>
 
-        <div>
-          <label for="date">Дата рождения</label>
-          <input id="date" name="date" type="date">
-        </div>
+          <div class="form-list">
+            <label for="file">Виберіть Фото</label>
+            <input id="file" name="file" type="file">
+          </div>
 
-      </fieldset>
+        </fieldset>
 
-      <fieldset>
-        <legend>Виберіть стать</legend>
+        <fieldset class="form-wrap">
+          <legend class="form-wrap-title">Виберіть стать</legend>
 
-        <div>
-          <input id="gender-male" name="gender" type="radio" value="male">
-          <label for="gender-male">Чоловіча</label>
-        </div>
+          <div class="input-radio">
+            <input id="gender-male" name="gender" type="radio" value="male">
+            <label for="gender-male">Чоловіча</label>
+          </div>
 
-        <div>
-          <input id="gender-female" name="gender" type="radio" value="female">
-          <label for="gender-female">Жіноча</label>
-        </div>
+          <div class="input-radio">
+            <input id="gender-female" name="gender" type="radio" value="female">
+            <label for="gender-female">Жіноча</label>
+          </div>
 
-      </fieldset>
+        </fieldset>
 
-      <fieldset>
+        <fieldset class="form-wrap">
 
-        <legend>Виберіть кухню</legend>
-        <div>
-          <input checked id="kitchen-ua" name="kitchen" type="checkbox" value="ua">
-          <label for="kitchen-ua">Українська</label>
-        </div>
-        <div>
-          <input id="kitchen-pl" name="kitchen" type="checkbox" value="jp">
-          <label for="kitchen-pl">Польська</label>
-        </div>
-        <div>
-          <input id="kitchen-it" name="kitchen" type="checkbox" value="ch">
-          <label for="kitchen-it">Італійська</label>
-        </div>
-      </fieldset>
+          <legend class="form-wrap-title">Виберіть кухню</legend>
+          <div class="input-checkbox">
+            <input checked id="kitchen-ua" name="kitchen" type="checkbox" value="ua">
+            <label for="kitchen-ua">Українська</label>
+          </div>
+          <div class="input-checkbox">
+            <input id="kitchen-pl" name="kitchen" type="checkbox" value="jp">
+            <label for="kitchen-pl">Польська</label>
+          </div>
+          <div class="input-checkbox">
+            <input id="kitchen-it" name="kitchen" type="checkbox" value="ch">
+            <label for="kitchen-it">Італійська</label>
+          </div>
+        </fieldset>
 
-      <fieldset>
-        <legend>Подробиці</legend>
+        <fieldset class="form-wrap">
+          <legend class="form-wrap-title">Подробиці</legend>
 
-        <div>
-          <label for="txt">Про себе</label>
-          <textarea cols="30" id="txt" name="txt" placeholder="Введите информацию о себе..." rows="10"></textarea>
-        </div>
+          <div class="form-list">
+            <label for="txt">Про себе</label>
+            <textarea class="form-text" cols="30" id="txt" name="txt" placeholder="Введите информацию о себе..."
+              rows="10"></textarea>
+          </div>
 
-      </fieldset>
+        </fieldset>
 
-      <fieldset>
-        <legend>Дія</legend>
+        <fieldset class="form-wrap">
+          <legend class="form-wrap-title">Дія</legend>
 
-        <div>
-          <button type="submit">Зареєструватися</button>
-        </div>
-        <div>
-          <button type="reset">Очистити форму</button>
-        </div>
+          <div>
+            <div class="button">
+              <button type="submit">Зареєструватися</button>
+            </div>
+            <div class="button">
+              <button type="reset">Очистити форму</button>
+            </div>
+          </div>
 
-      </fieldset>
-    </form>
+        </fieldset>
+      </form>
+    </div>
 
   </main>
 

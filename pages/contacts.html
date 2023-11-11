@@ -9,6 +9,7 @@
 </head>
 
 <body>
+  <div class="bg-image"></div>
   <header class="header-conteiner">
     <div class="conteiner">
       <div class="logo">
@@ -29,51 +30,55 @@
   </header>
 
   <main class="main-conteiner">
-    <div>
-      <h1>Контакти</h1>
-    </div>
-    <div class="adres">
-      <h2>Адресса</h2>
-      <p>м.Дніпро
-        вул.Тітова 36а
-        Магазин "CompMax"
-      </p>
-    </div>
+    <div class="contacts-conteiner">
+      <div>
+        <h1>Контакти</h1>
+      </div>
+      <div class="adres">
+        <h2 class="contact-title">Адресса</h2>
+        <p>м.Дніпро
+          вул.Тітова 36а
+          Магазин "CompMax"
+        </p>
+      </div>
 
-    <div>
-      <h2>Як дістатися</h2>
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d38641.484697654225!2d35.00053625405697!3d48.434207964082105!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dbe3676739cbf1%3A0xd4562168c84deaeb!2sAppolo!5e0!3m2!1sen!2sua!4v1698323352622!5m2!1sen!2sua"
-        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
+      <div>
+        <h2 class="contact-title">Як дістатися</h2>
+        <iframe class="contact-map"
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d38641.484697654225!2d35.00053625405697!3d48.434207964082105!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dbe3676739cbf1%3A0xd4562168c84deaeb!2sAppolo!5e0!3m2!1sen!2sua!4v1698323352622!5m2!1sen!2sua"
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
 
-    <div>
-      <h2>Зв'язок з нами</h2>
-      <form action="https://tests.fomenko.top/echo/index.php" method="GET">
-        <fieldset>
-          <legend>Контактні данні</legend>
-          <div>
-            <label for="name">Им'я</label>
-            <input autofocus id="name" name="name" placeholder="Введите имя" type="text">
-          </div>
-          <div>
-            <label for="phone">Контактний телефон:</label>
-            <input id="phone" name="phone" pattern="380-[0-9]{5}-[0-9]{4}" placeholder="Ваш номер телефона" type="tel">
-          </div>
-          <div>
-            <label for="email">Email:</label>
-            <input id="email" name="email" placeholder="Ваш e-mail" type="email">
-          </div>
-          <div>
-            <label for="txt">Питиння:</label>
-            <textarea cols="40" id="txt" name="question" placeholder="Задайте нам свой вопрос" rows="7"></textarea>
-          </div>
-          <div>
-            <button type="submit">Надіслати</button>
-          </div>
-        </fieldset>
-      </form>
+      <div>
+        <h2>Зв'язок з нами</h2>
+        <form action="https://tests.fomenko.top/echo/index.php" method="GET">
+          <fieldset class="form-wrap">
+            <legend class="form-wrap-title">Контактні данні</legend>
+            <div class="form-list">
+              <label for="name">Им'я</label>
+              <input class="form-input" autofocus id="name" name="name" placeholder="Введите имя" type="text">
+            </div>
+            <div class="form-list">
+              <label for="phone">Контактний телефон:</label>
+              <input class="form-input" id="phone" name="phone" pattern="380-[0-9]{5}-[0-9]{4}"
+                placeholder="Ваш номер телефона" type="tel">
+            </div>
+            <div class="form-list">
+              <label for="email">Email:</label>
+              <input class="form-input" id="email" name="email" placeholder="Ваш e-mail" type="email">
+            </div>
+            <div class="form-list">
+              <label for="txt">Питиння:</label>
+              <textarea class="form-text" cols="40" id="txt" name="question" placeholder="Задайте нам свой вопрос"
+                rows="7"></textarea>
+            </div>
+            <div class="button">
+              <button type="submit">Надіслати</button>
+            </div>
+          </fieldset>
+        </form>
+      </div>
     </div>
   </main>
 
