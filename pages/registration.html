@@ -5,12 +5,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Реєстрація</title>
-  <link rel="stylesheet" href="../assets/css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600;700&family=Oswald:wght@400;500;600;700&family=Roboto:wght@400;500;700&family=Solitreo&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 
 <body>
@@ -39,40 +39,40 @@
       <h1>Реєстрація</h1>
       <form action="https://tests.fomenko.top/echo/index.php" method="GET">
         <fieldset class="form-wrap">
-          <legend class="form-wrap-title">Форма реєстрації</legend>
+          <legend>Форма реєстрації</legend>
           <div class="form-list">
             <label for="lastname">Прізвище</label>
-            <input class="form-input form--input" id="lastname" name="lastname" placeholder="Прізвище" type="text">
+            <input id="lastname" name="lastname" placeholder="Прізвище" type="text">
           </div>
 
           <div class="form-list">
             <label for="name">Ім'я</label>
-            <input class="form-input form--input" id="name" name="name" placeholder="Ім'я" type="text">
+            <input id="name" name="name" placeholder="Ім'я" type="text">
           </div>
 
           <div class="form-list">
             <label for="surname">По батькові</label>
-            <input class="form-input form--input" id="surname" name="surname" placeholder="По батькові" type="text">
+            <input id="surname" name="surname" placeholder="По батькові" type="text">
           </div>
 
           <div class="form-list">
             <label for="email">Email</label>
-            <input class="form-input" id="email" name="email" placeholder="Email" type="email">
+            <input id="email" name="email" placeholder="Email" type="email">
           </div>
 
           <div class="form-list">
             <label for="password">Пароль</label>
-            <input class="form-input" id="password" name="password" placeholder="Пароль" type="password">
+            <input id="password" name="password" placeholder="Пароль" type="password">
           </div>
 
           <div class="form-list">
             <label for="site">Адресса сайту</label>
-            <input class="form-input" id="site" name="site" type="text" value="mysite.name">
+            <input id="site" name="site" type="text" value="mysite.name">
           </div>
 
           <div class="form-list">
             <label for="date">Дата рождения</label>
-            <input class="form-input" id="date" name="date" type="date">
+            <input id="date" name="date" type="date">
           </div>
 
           <div class="form-list">
@@ -83,14 +83,14 @@
         </fieldset>
 
         <fieldset class="form-wrap">
-          <legend class="form-wrap-title">Виберіть стать</legend>
+          <legend>Виберіть стать</legend>
 
-          <div class="input-radio">
+          <div>
             <input id="gender-male" name="gender" type="radio" value="male">
             <label for="gender-male">Чоловіча</label>
           </div>
 
-          <div class="input-radio">
+          <div>
             <input id="gender-female" name="gender" type="radio" value="female">
             <label for="gender-female">Жіноча</label>
           </div>
@@ -99,23 +99,23 @@
 
         <fieldset class="form-wrap">
 
-          <legend class="form-wrap-title">Виберіть кухню</legend>
-          <div class="input-checkbox">
+          <legend>Виберіть кухню</legend>
+          <div>
             <input checked id="kitchen-ua" name="kitchen" type="checkbox" value="ua">
             <label for="kitchen-ua">Українська</label>
           </div>
-          <div class="input-checkbox">
+          <div>
             <input id="kitchen-pl" name="kitchen" type="checkbox" value="jp">
             <label for="kitchen-pl">Польська</label>
           </div>
-          <div class="input-checkbox">
+          <div>
             <input id="kitchen-it" name="kitchen" type="checkbox" value="ch">
             <label for="kitchen-it">Італійська</label>
           </div>
         </fieldset>
 
         <fieldset class="form-wrap">
-          <legend class="form-wrap-title">Подробиці</legend>
+          <legend>Подробиці</legend>
 
           <div class="form-list">
             <label for="txt">Про себе</label>
@@ -126,7 +126,7 @@
         </fieldset>
 
         <fieldset class="form-wrap">
-          <legend class="form-wrap-title">Дія</legend>
+          <legend>Дія</legend>
 
           <div>
             <div class="button">

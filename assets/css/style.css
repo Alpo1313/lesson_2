@@ -125,11 +125,13 @@ h1 {
   margin: 0 auto;
 }
 
-.cpu,
-.ram,
-.videocard {
-  margin-bottom: 20px;
+.cpu p,
+.ram p,
+.videocard p {
+  padding: 20px;
+  margin-bottom: 10px;
 }
+
 
 .ram-title,
 .cpu-title,
@@ -138,43 +140,47 @@ h1 {
   border-bottom: 2px solid lightcoral;
 }
 
-.content-link {
+a {
   text-decoration: none;
   color: black;
-}
+} 
 
-.comments-link {
-  text-decoration: none;
-  color: yellow;
-}
-
-.article-link {
-  text-decoration: none;
-  color: orange;
-}
-
-.short-articles {
+.article-text {
   background-color: red;
 }
 
-.comments {
-  margin-top: 10px;
+.article-text > p > a {
+  color: orange;
+}
+
+.comments > p  > a {
+  color: yellow;
 }
 
 /* Cpu, Ram, Videocard */
 
-.title {
+.cpu-articles h2,
+.rum-articles h2,
+.videocard-articles h2,
+.comments h2 {
   display: flex;
   margin: 30px 20px 10px;
 }
 
-.different-first-letter::first-letter {
+.cpu-articles > p::first-letter,
+.rum-articles > p::first-letter,
+.videocard-articles > p::first-letter{
   font-family: 'Courier New', Courier, monospaces;
   font-size: 32px;
   color: green;
 }
 
-.title-list {
+.cpu-articles ul,
+.cpu-articles ol,
+.rum-articles ul,
+.rum-articles ol,
+.videocard-articles ul,
+.videocard-articles ol {
   display: flex;
   flex-direction: column;
   margin-left: 50px;
@@ -185,13 +191,14 @@ h1 {
   flex-direction: column;
 }
 
-.name-commenters {
+.life-comments p:first-child {
   max-width: 200px;
   margin: 15px 10px;
   font-size: 18px;
 }
 
-.comment {
+.life-comments p:last-child {
+  padding: 20px;
   background-color: yellow;
 }
 
@@ -206,13 +213,13 @@ h1 {
   margin-left: 2px;
 }
 
-.list-catalog {
+.catalog ul {
   list-style-type: circle;
   max-width: 980px;
   margin: 0 auto;
 }
 
-.list-catalog-name {
+.catalog li > ul {
   margin: 5px 0 5px 50px;
   padding: 5px 0;
   list-style: outside url();
@@ -230,11 +237,11 @@ h1 {
   gap: 25px;
 }
 
-.contact-title {
-  padding-bottom: 7px;
+.contacts-conteiner h2{
+  padding: 7px;
 }
 
-.contact-map {
+.contacts-conteiner iframe {
   border-radius: 10px;
 }
 
@@ -246,13 +253,6 @@ h1 {
   height: 100%;
 }
 
-.form-wrap-title {
-  display: flex;
-  text-align: start;
-  font-size: 20px;
-  margin-left: 20px;
-}
-
 .form-list {
   display: flex;
   flex-direction: column;
@@ -262,40 +262,38 @@ h1 {
   padding: 5px 0;
 }
 
-.form-input {
+legend {
+  display: flex;
+  text-align: start;
+  font-size: 20px;
+  margin-left: 20px;
+}
+
+input {
   height: 30px;
   border-radius: 10px;
   padding-left: 10px;
 }
 
-.form--input {
+input[name="lastname"], 
+input[name="name"],
+input[name="surname"] {
   text-transform: capitalize;
-}
-
-.input-radio,
-.input-checkbox {
-  display: flex;
-  margin: 5px 50px;
 }
 
 input[type="radio"], 
 input[type="checkbox"] {
   width: 20px;
   height: 20px;
-  margin-right: 10px;
+  margin: 5px 10px 0 50px;
 }
 
-input[type="checkbox"]:hover{
+input[type="checkbox"]:hover,
+input[type="radio"]:hover{
   outline: 2px dashed black;
 }
 
-input[type="radio"]:hover {
-  outline: 2px dashed black;
-  padding: 10px;
-}
-
-
-.form-text {
+textarea {
   resize: vertical;
   border-radius: 10px;
   padding: 10px;
@@ -315,7 +313,7 @@ button {
   background-color: #de70ea;
   border-radius: 10px;
   font-size: 20px;
-}
+} */
 
 
 
@@ -329,9 +327,9 @@ button {
   padding: 100px 0 50px 0;
 }
 
-
 .gallery {
   display: flex;
+  justify-content: center;
   margin: 0 auto;
 }
 

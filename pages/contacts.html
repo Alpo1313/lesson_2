@@ -5,6 +5,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Контакти</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600;700&family=Oswald:wght@400;500;600;700&family=Roboto:wght@400;500;700&family=Solitreo&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 
@@ -35,7 +40,7 @@
         <h1>Контакти</h1>
       </div>
       <div class="adres">
-        <h2 class="contact-title">Адресса</h2>
+        <h2>Адресса</h2>
         <p>м.Дніпро
           вул.Тітова 36а
           Магазин "CompMax"
@@ -43,7 +48,7 @@
       </div>
 
       <div>
-        <h2 class="contact-title">Як дістатися</h2>
+        <h2>Як дістатися</h2>
         <iframe class="contact-map"
           src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d38641.484697654225!2d35.00053625405697!3d48.434207964082105!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dbe3676739cbf1%3A0xd4562168c84deaeb!2sAppolo!5e0!3m2!1sen!2sua!4v1698323352622!5m2!1sen!2sua"
           width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
@@ -54,24 +59,23 @@
         <h2>Зв'язок з нами</h2>
         <form action="https://tests.fomenko.top/echo/index.php" method="GET">
           <fieldset class="form-wrap">
-            <legend class="form-wrap-title">Контактні данні</legend>
+            <legend>Контактні данні</legend>
             <div class="form-list">
               <label for="name">Им'я</label>
-              <input class="form-input" autofocus id="name" name="name" placeholder="Введите имя" type="text">
+              <input autofocus id="name" name="name" placeholder="Введите имя" type="text">
             </div>
             <div class="form-list">
               <label for="phone">Контактний телефон:</label>
-              <input class="form-input" id="phone" name="phone" pattern="380-[0-9]{5}-[0-9]{4}"
-                placeholder="Ваш номер телефона" type="tel">
+              <input id="phone" name="phone" pattern="380-[0-9]{5}-[0-9]{4}" placeholder="Ваш номер телефона"
+                type="tel">
             </div>
             <div class="form-list">
               <label for="email">Email:</label>
-              <input class="form-input" id="email" name="email" placeholder="Ваш e-mail" type="email">
+              <input id="email" name="email" placeholder="Ваш e-mail" type="email">
             </div>
             <div class="form-list">
               <label for="txt">Питиння:</label>
-              <textarea class="form-text" cols="40" id="txt" name="question" placeholder="Задайте нам свой вопрос"
-                rows="7"></textarea>
+              <textarea cols="40" id="txt" name="question" placeholder="Задайте нам свой вопрос" rows="7"></textarea>
             </div>
             <div class="button">
               <button type="submit">Надіслати</button>
