@@ -34,12 +34,15 @@
     </div>
   </header>
 
-  <main class="main-conteiner">
+  <main class="main-conteiner-navigation">
     <h1>Навігація</h1>
 
     <h2 class="nav-chapter">Навігація по сторінці</h2>
+    <div class="anchor">
+      <span id="top"></span>
+    </div>
 
-    <div class="chapter" id="top">
+    <div class="chapter">
       <a class="chapter-list" href="#sub1">Розділ 1</a>
       <a class="chapter-list" href="#sub2">Разділ 2</a>
       <a class="chapter-list" href="#sub3">Разділ 3</a>
@@ -47,8 +50,11 @@
       <a class="chapter-list" href="#sub5">Разділ 5</a>
     </div>
 
-    <div class="text">
-      <h2 class="text-title" id="sub1">Розділ 1</h2>
+    <div class="chapter-text">
+      <div class="anchor">
+        <span id="sub1"></span>
+      </div>
+      <h2>Розділ 1</h2>
 
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas corrupti enim aperiam quam. Expedita
         similique ipsa quia? Consequatur rerum incidunt earum vel illum corrupti aut, excepturi soluta minima modi
@@ -360,11 +366,16 @@
         dolores adipisci illum expedita, nesciunt sapiente, quo ab magnam porro eum fugiat deleniti similique
         inventore.
       </p>
-      <p class="back"><a href="#top">Повернутися</a></p>
+      <p><a href="#top">Повернутися</a></p>
     </div>
 
-    <div class="text">
-      <h2 class="text-title" id="sub2">Розділ 2</h2>
+    <div class="chapter-text">
+
+      <div class="anchor">
+        <span id="sub2"></span>
+      </div>
+
+      <h2>Розділ 2</h2>
 
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas corrupti enim aperiam quam. Expedita
         similique ipsa quia? Consequatur rerum incidunt earum vel illum corrupti aut, excepturi soluta minima modi
@@ -676,11 +687,16 @@
         dolores adipisci illum expedita, nesciunt sapiente, quo ab magnam porro eum fugiat deleniti similique
         inventore.
       </p>
-      <p class="back"><a href="#top">Повернутися</a></p>
+      <p><a href="#top">Повернутися</a></p>
     </div>
 
-    <div class="text">
-      <h2 class="text-title" id="sub3">Розділ 3</h2>
+    <div class="chapter-text">
+
+      <div class="anchor">
+        <span id="sub3"></span>
+      </div>
+
+      <h2>Розділ 3</h2>
 
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas corrupti enim aperiam quam. Expedita
         similique ipsa quia? Consequatur rerum incidunt earum vel illum corrupti aut, excepturi soluta minima modi
@@ -992,11 +1008,16 @@
         dolores adipisci illum expedita, nesciunt sapiente, quo ab magnam porro eum fugiat deleniti similique
         inventore.
       </p>
-      <p class="back"><a href="#top">Повернутися</a></p>
+      <p><a href="#top">Повернутися</a></p>
     </div>
 
-    <div class="text">
-      <h2 class="text-title" id="sub4">Розділ 4</h2>
+    <div class="chapter-text">
+
+      <div class="anchor">
+        <span id="sub4"></span>
+      </div>
+
+      <h2>Розділ 4</h2>
 
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas corrupti enim aperiam quam. Expedita
         similique ipsa quia? Consequatur rerum incidunt earum vel illum corrupti aut, excepturi soluta minima modi
@@ -1308,11 +1329,16 @@
         dolores adipisci illum expedita, nesciunt sapiente, quo ab magnam porro eum fugiat deleniti similique
         inventore.
       </p>
-      <p class="back"><a href="#top">Повернутися</a></p>
+      <p><a href="#top">Повернутися</a></p>
     </div>
 
-    <div class="text">
-      <h2 class="text-title" id="sub5">Розділ 5</h2>
+    <div class="chapter-text">
+
+      <div class="anchor">
+        <span id="sub5"></span>
+      </div>
+
+      <h2>Розділ 5</h2>
 
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas corrupti enim aperiam quam. Expedita
         similique ipsa quia? Consequatur rerum incidunt earum vel illum corrupti aut, excepturi soluta minima modi
@@ -1624,13 +1650,17 @@
         dolores adipisci illum expedita, nesciunt sapiente, quo ab magnam porro eum fugiat deleniti similique
         inventore.
       </p>
-      <p class="back"><a href="#top">Повернутися</a></p>
+      <p><a href="#top">Повернутися</a></p>
     </div>
 
   </main>
 
-  <footer class="footer">
-    <p class="footer-text">&#169; Тут був я</p>
+  <footer>
+    <div class="footer-wrap">
+      <div class="container footer-inner">
+        <div class="copyright">&copy; Тут був я</div>
+      </div>
+    </div>
   </footer>
 
 </body>
