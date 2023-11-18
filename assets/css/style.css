@@ -9,6 +9,8 @@ html {
   font-size: 17px;
 }
 
+body {}
+
 .bg-image {
   position: fixed;
   z-index: -1;
